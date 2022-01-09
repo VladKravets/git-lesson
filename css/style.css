@@ -1,0 +1,343 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    color: #727272;
+    background-color: #eeeff1;
+}
+.__container {
+    max-width: 1130px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* ////////////////////////////////////////////////////////// */
+.header {
+    margin: 79px 0;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+}
+.header__nav {
+}
+.header__list {
+    display: flex;
+}
+.list__item {
+}
+.navlink {
+    color: #34547a;
+    font-weight: 500;
+    letter-spacing: 10%;
+    line-height: 26, 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.navlink:hover {
+    font-size: 20px;
+    color: #061222;
+    transition: all 0.2s linear;
+}
+.list__item:not(:last-child) {
+    margin: 0px 42px 0px 0px;
+}
+/* /////////////////////////////////////////////////////////// */
+.page__container {
+}
+
+.page__main {
+    display: flex;
+    justify-content: space-between;
+    margin: 91px 0px 0px 82px;
+}
+.page__image {
+}
+.page__info {
+}
+
+.page__tittle {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 78, 75px;
+    color: #000;
+    margin-bottom: 60px;
+}
+.page__subtittle {
+    width: 540px;
+    height: 67px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+.page__button {
+    letter-spacing: 0.1em;
+    color: #fff;
+    background-color: #34547a;
+    padding: 25px 41px;
+    margin-bottom: 146px;
+    letter-spacing: 10%;
+    line-height: 26, 25px;
+}
+.page__button:hover {
+    background-color: #fff;
+    color: #34547a;
+    transition: all 0.2s linear;
+}
+
+/* ////////////////////////////////////////////////////// */
+.section__about {
+    background-color: #fff;
+    margin-top: 146px;
+    height: 366px;
+}
+.section__container {
+}
+.about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__tittle {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    line-height: 37.5px;
+    color: #000;
+    margin: 119px 0px 50px 0px;
+}
+.section__subtittle {
+    text-align: center;
+    line-height: 26.25px;
+    font-size: 16px;
+    width: 540px;
+    height: auto;
+}
+/* //////////////////////////////////////////////////////// */
+.page__cards {
+    background-color: #34547a;
+    height: 250px;
+    color: #fff;
+}
+.page__card {
+    display: flex;
+}
+.page__card-column {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    justify-content: flex-start;
+    margin-right: 59px;
+}
+
+.page__card-logo {
+}
+.page__card-info {
+    margin: 0px 0px 0px 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24.61px;
+}
+.page__card-number {
+    margin-bottom: 10px;
+}
+.page__card-text {
+    font-size: 16px;
+}
+/* ///////////////////////////////////////////////////////// */
+.page__skills {
+    background-color: #fff;
+}
+.navlink__myskills {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+.my__scills {
+}
+
+.skills__tittle {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #000;
+    margin: 80px 0px 50px 0px;
+}
+.skills__subtittle {
+    font-size: 16px;
+    line-height: 26.25px;
+}
+.skills__subtittle::after {
+    content: " ";
+    display: block;
+    width: 350px;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        rgba(52, 84, 122, 1) 71%,
+        rgba(196, 196, 196, 1) 74%,
+        rgba(196, 196, 196, 1) 100%
+    );
+    margin: 10px auto 50px;
+}
+.page__skills-image {
+    margin-bottom: 100px;
+}
+/* ///////////////////////////////////////////// */
+.section__work {
+}
+
+.section__work-video {
+    margin: 57px 0px 228px 0px;
+}
+/* ////////////////////////////////////////////////////////// */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.works__item {
+    width: 25%;
+    height: 494px;
+    position: relative;
+    overflow: hidden;
+}
+.works__logo img {
+    background-size: cover;
+    background-position: center;
+}
+
+.works__item:hover .works__logo {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.works__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: #34547a;
+    opacity: 0;
+
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: opacity 0.2s linear;
+}
+/* ////////////////////////////////////////////////////////// */
+.page__partners {
+    background-color: #fff;
+}
+.partners__items {
+    display: flex;
+}
+.partner__item {
+    width: 25%;
+    margin: 72px 32px 100px 0px;
+}
+/* //////////////////////////////////////////////////////// */
+.section__question {
+    height: 762px;
+}
+.question__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+.question__sms {
+    display: flex;
+    justify-content: center;
+}
+.area__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.question__name {
+    margin-right: 50px;
+    padding: 18px;
+    background-color: #fff;
+    width: 255px;
+}
+.question__mail {
+    padding: 18px;
+    background-color: #fff;
+    width: 255px;
+}
+.message__question {
+    height: 175px;
+    width: 560px;
+    padding: 17px;
+    margin-bottom: 50px;
+}
+.action {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.button {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 15%;
+    line-height: 22.97px;
+    background-color: #34547a;
+    padding: 20px 45px;
+    color: #fff;
+    width: 190px;
+}
+/* ////////////////////////////////////////////////////////// */
+.footer {
+    background-color: #34547A;
+    color: #fff;
+    height: 151px;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0px 50px 0;
+}
+.footer__text {
+}
+.footer__tittle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24.61px;
+}
+.footer__subtittle {
+    font-size: 13px;
+    line-height: 21.33px;
+}
+.footer__logos {
+    display: flex;
+}
+.footer__logo:not(:last-child){
+    margin: 0px 22px 0px 0px;
+    
+}
